@@ -1,0 +1,91 @@
+
+body{
+    margin: 40px;
+   
+}
+.container h1{
+    text-align: center;
+    color: midnightblue;
+}
+.container h2{
+    text-align: center;
+    color: rgb(171, 16, 69);
+    font-style: italic;
+}
+.container h3,.container a{
+    display: inline;
+}
+.container h3{
+    color:purple;
+    font-size: x-large ;
+}
+.container a button{
+    padding: 8px;
+    margin: 18px;
+    color: white;
+    background-color: green;
+    border-style: groove;
+    cursor: pointer;
+    
+}
+
+.display h3{
+    color:brown;
+    margin: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.container .cdisplay{
+    border-top: 2px solid violet;
+    display: inline-block;
+    width: 900px;
+    margin-top: 40px;
+    padding: 20px;
+    margin-left: 90px;
+}
+
+.display p {
+    font-size: x-large;
+    color: #164863;
+    font-weight: bold;
+    display: inline;
+    font-style: italic;
+}
+.cdisplay h4{
+    display: inline;
+    font-size: x-large;
+    color: #d46471;
+}
+.cdisplay a  #bt1{
+    background-color:rgb(6, 118, 118);
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+}
+.cdisplay a  #bt2{
+    background-color:rgb(156, 15, 15);
+    padding: 10px;
+    width: 80px;
+    height: 40px;
+}
+.cont{
+    border: 2px solid snow;
+    padding: 40px;
+    display: inline-block;
+    margin-left: 400px;
+    margin-top: 60px;
+}
+.cont h1{
+    color: aliceblue;
+}
+.cont form input{
+    width: 400px;
+    height: 50px;
+}
+.cont button{
+    width: 180px;
+    height: 50px;
+    background-color: rgb(169, 45, 70);
+    color: white;
+    font-size: medium;
+}

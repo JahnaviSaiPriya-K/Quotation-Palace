@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<!-- <body style="background-image: url(https://i1.wp.com/doctorsofcourage.org/wp-content/uploads/2017/11/computer-blue-opacity-background.jpg?ssl=1) ; background-repeat: no-repeat; background-size: cover;"> -->
+  <body style="background-image: url(https://images2.alphacoders.com/993/thumb-1920-993073.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+        <h1>Quotation's Palace</h1>
+        <h2>A recognized place for your creative quotations</h2>
+        <h3>Unwrap the creater in you by clicking on this </h3>
+        <a href="/new"><button>POST the QUOTE</button></a> 
+        <div class="display">
+            <h3>Some of our creative minds Quotations</h3> <br>
+            <% quotes.forEach(quote => { %>
+                <div class="cdisplay">
+                <p><p>Author&nbsp;&nbsp;</p> : <h4>&nbsp;&nbsp;<%=quote.author%></h4></p><br><br>
+                <p><p>Quotatiton&nbsp;&nbsp;</p> : <h4>&nbsp;&nbsp;<%=quote.quote%></h4></p><br><br>
+                <p><p>Date&nbsp;&nbsp;</p> : <h4>&nbsp;&nbsp;<%=quote.date%></h4></p><br><br>
+                <a href="/edit<%= quote.id %>"><button id="bt1">EDIT</button></a>
+                <a href="/delete<%= quote.id %>"><button id="bt2">DELETE</button></a>
+            </div> <br>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

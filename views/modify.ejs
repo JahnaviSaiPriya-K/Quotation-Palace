@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="background-image: url(https://media.istockphoto.com/vectors/futuristic-idea-creativity-concept-with-glowing-low-polygonal-light-vector-id1185115592?k=6&m=1185115592&s=170667a&w=0&h=ysaWs00N102FHdU9KjvhjaR-UhPdv4goCrOKHwxC07g=);background-repeat: no-repeat;background-size: cover;">
+    <div class="cont"> 
+        <h1><%= heading %></h1>
+        <% if(locals.quote){ %>
+            <form action="/editing<%= quote.id %>" method="post">
+                <input type="text" placeholder="Enter Quote" name="quotation" value = "<%= quote.quote %>" > <br> <br>
+                <input type="text" placeholder="Enter Author name" name="author" value="<%= quote.author %>"> <br> <br>
+                <button type="submit"><%= submit %></button>
+            </form>
+        <% } else { %>
+        <form action="/create" method="post">
+            <input type="text" placeholder="Enter Quote" name="quotation"> <br> <br>
+            <input type="text" placeholder="Enter Author name" name="author"> <br> <br>
+            <button type="submit"><%= submit %></button>
+        </form>
+        <% } %>
+    </div>
+</body>
+</html>
